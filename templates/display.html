@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}Video Summarization{% endblock %}
+{% block content %}
+<div>
+    {% if name %}
+    <h1>{{name}}</h1>
+        <!-- <a href ="/ise_output.avi" download="video.mp4">download</a> -->
+        <a href="{{ url_for('download_file',path=name)}}">Download</a>
+    {% endif %}
+</div>
+{% endblock %}

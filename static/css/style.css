@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tag a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.tag a:hover{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    background-color: black;
+    height: 4rem;
+    padding: 20px;
+}
+.logo{
+    color: white;
+    font-weight: bolder;
+}
+.show{
+    display: block;
+}
+
+#loading {
+    display: none;
+    position: relative;
+    left: 40vw  ;
+    z-index: 100;
+    width: 15vw;
+    height: 40vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    /* background-image: url("static/css/MnyxU.gif"); */
+    background: url('https://i.stack.imgur.com/MnyxU.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+#load{
+    margin-top: 50px;
+    width: 500px;
+    padding: 25px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.form-control{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.index{
+    height: 100vh;
+}
+canvas {
+    background: white;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
+  .left,.right{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.page{
+    width: 95vw;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.about{
+    font-size: 1.2rem;
+    position: relative;
+    top: 10vw;
+}
+
+
+.box{
+    width: 80vw;
+    height: 30vw;
+    /* margin: 0 auto; */
+}
+.content{
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: 12vw;
+    line-height: 1.6;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('/static/images/web3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   }

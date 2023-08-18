@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Video Summarization{% endblock %}
+{% block content %}
+<div class="index">
+    <form id="load" method="POST">
+        <input class="form-control" name="url" type="file">
+        <button class="form-control" id="button" type="submit" onclick="load()">Summarize</button>
+    </form>
+    {% if name %}
+    <h1 style="margin:0 auto">{{name}}</h1>
+    {% endif %}
+    <h2 id="loading">wait for the video to be summarized</h2>
+    <div id="loading"></div>
+    <script type=text/javascript>function load(){$("#loading").show()}</script>
+</div>
+{% endblock %}
